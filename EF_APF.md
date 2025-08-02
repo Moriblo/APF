@@ -157,23 +157,26 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 ## 💰 Levantamento de Custos
 
 - Definir "Carga H" por tipo de profissional (Dev, QA, PO etc.)
-- Definr "Custo HH" por tipo de profissional (Fonte Externa 1)
-- Calcular custo total para o Esforço Total ([Custo HH Dev * Carga H Dev] + [Custo HH QA * Carga H QA] + [Custo HH PO * Carga H PO] + etc)
+- Definir "Custo HH" por tipo de profissional (Fonte Externa 1)
+- Calcular Custo Total para o Esforço Total ([Custo HH Dev * Carga H Dev] + [Custo HH QA * Carga H QA] + [Custo HH PO * Carga H PO] + etc)
 
 ## ⏳ Levantamento de Prazos
 
-- Mapear "Esforço por fase/profissional" ([desenvolvimento, testes, homologação] x [Dev, QA, PO, etc]), conforme % de esforço por histórico IFPUG
+- Mapear "Esforço por fase/profissional" (Desenvolvimento (Dev, QA, PO, etc), Testes (Dev, QA, PO, etc), Homologação (Dev, QA, PO, etc)), % de esforço por histórico IFPUG
 - Definir "% Alocação" por tipo de profissional por fase/sprint (Fonte Externa 2)
-- Cacular "Prazo por profissional por fase/sprint" ([% Alocação] * [Esforço por fase/profissional])
+- Calcular "Prazo por profissional por fase/sprint" ([% Alocação] * [Esforço por fase/profissional])
 - Estabelecer nível de paralelismo entre alocações de profissionais por fase/sprint
 - Calcular os prazos por fase
 
-## 📐 Validar PoC e estabelecer Prototipagem (Incluindo padronização de coleta de requisitos)
+## 📐 Validar PoC e estabelecer Prototipagem
 
-- Construir visão por Curvas S (Tanto de Custos quanto de prazos e conferir com o andamento dos projetos)
-- Construir visão por indíces de EVA (CPI, SPI e conferir com o andamento dos projetos)
+- Refinar PoC e validar
+- Construir Padrão de Coleta de Requisitos (Coletar modelos usados e verificar existência de outros recursos/atributos além de RF e CT)
+- Construir Visão por Curvas S (Tanto de Custos quanto de prazos e comparar com o andamento dos projetos)
+- Construir Visão por Indices EVA (CPI, SPI e comparar com o andamento dos projetos)
+- Validar Visão Final de Custos (Modelo versus Realidade)
 
-## 🧠 Go no go para geração de base de conhecimento
+## 🧠 Go no go para implementação de processo e geração de base de conhecimento
 
 
 
