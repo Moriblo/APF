@@ -1,7 +1,7 @@
 [![IFPUG Member](https://img.shields.io/badge/IFPUG-Member-blue)](https://www.ifpug.org)
 # 📌 Covertendo o texto de uma EF em APF
 
-## 📊 EF do PJ#1427 (Desatualizada)
+## 📊 Coleta Padronizada de Requisitos (EF do PJ#1427 Descaracterizada)
 
 ```
 Requisitos Funcionais (RF)
@@ -66,7 +66,7 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 • Em caso de devolução ou cancelamento, o boleto deixará de ser exibido na consulta do Painel Financeiro, conforme comportamento atual.
 ```
 
-## 🧩 Consolidação RF ↔ CT ↔ FT/FD com DERs/RLRs + Tipo de Função
+## 🧩 Conversão de Requisitos em PF (Consolidação RF ↔ CT ↔ FT/FD com DERs/RLRs + Tipo de Função)
 
 | RF ID  | PFs Estimado | CTs Relacionadas         | PFs via CTs | FT/FD Envolvidas                                 | Tipo FT | Tipo FD | PFs por FT/FD | DERs / RLRs     | Situação             |
 |:------:|:-------------:|:------------------------:|:-----------:|:------------------------------------------------:|:-------:|:--------:|:--------------:|:----------------:|:--------------------:|
@@ -177,6 +177,7 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 - Validar Visão Final de Custos (Modelo versus Realidade)
 
 ## 🧠 Go no go para implementação de processo e geração de base de conhecimento
+
 
 
 
