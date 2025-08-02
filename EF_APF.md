@@ -154,8 +154,11 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 
 ### ✳️ Próximos passos (opcional)
 
-- Quebrar esforço por semana ou sprint
 - Alocar carga por tipo de profissional (Dev, QA, PO etc.)
+- Definr custo de HH por tipo de profissional
+- Calcular custo total para o Esforço Total estimado ([Custo HH Dev * Esforço H Dev] + [Custo HH QA * Esforço H QA] + [Custo HH PO * Esforço H PO] + etc)
 - Mapear esforço por fase (desenvolvimento, testes, homologação)
+- Quebrar esforço por semana ou sprint
+
 
 
