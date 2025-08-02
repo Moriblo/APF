@@ -1,5 +1,5 @@
 [![IFPUG Member](https://img.shields.io/badge/IFPUG-Member-blue)](https://www.ifpug.org)
-# Covertendo o texto de uma EF em APF
+# 📌 Covertendo o texto de uma EF em APF
 
 ## 📊 EF do PJ#1427 (Desatualizada)
 
@@ -94,9 +94,9 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
   - **ALI** (Arquivo Lógico Interno): `2` → Template de e-mail + registro de falhas
   - **AIE** (Arquivo de Interface Externa): `1` → Boletos FIDC vindos do SAP
 
-## 📌 Estimativa de Esforço com Base em Pontos de Função
+# 📌 Estimativa de Esforço com Base em Pontos de Função
 
-### 🔧 Parâmetros da estimativa
+## 🔧 Parâmetros da estimativa
 - **Baixa produtividade**: 2 horas por PF
 - **Escopo em refinamento**: Fator de risco de 20%
 - **Distribuição por tipo de PF e por RF**
@@ -104,7 +104,7 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 
 ---
 
-### ⏳ Esforço total base
+## 💪 Esforço total base
 
 - **PFs totais**: 64
 - **Horas base (2h/PF)**: 128 horas
@@ -114,7 +114,7 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 
 ---
 
-### 💡 Distribuição por tipo de função
+## 💡 Distribuição por tipo de função
 
 | Tipo de PF | Qtd PFs | Horas (2h/PF) | % do total | Perfil predominante            |
 |------------|---------|----------------|------------|-------------------------------|
@@ -128,7 +128,7 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 
 ---
 
-### 📂 Distribuição por Requisito Funcional
+## 📂 Distribuição por Requisito Funcional
 
 | RF ID  | PFs | Horas | Perfil predominante                                     |
 |--------|-----|-------|---------------------------------------------------------|
@@ -143,7 +143,7 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 
 ---
 
-### 🧮 Esforço final com risco aplicado
+## 🧮 Esforço final com risco aplicado
 
 - Esforço base: 128 h
 - Fator de risco: +25.6 h (20%)
@@ -152,21 +152,23 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 
 ---
 
-### ✳️ Próximos passos
+# 📌 Próximos passos
 
-#### Levantamento de Custos
+## 💰 Levantamento de Custos
 
 - Definir "Carga H" por tipo de profissional (Dev, QA, PO etc.)
 - Definr "Custo HH" por tipo de profissional (Fonte Externa 1)
 - Calcular custo total para o Esforço Total ([Custo HH Dev * Carga H Dev] + [Custo HH QA * Carga H QA] + [Custo HH PO * Carga H PO] + etc)
 
-#### Levantamento de Prazos
+## ⏳ Levantamento de Prazos
 
 - Mapear "Esforço por fase/profissional" ([desenvolvimento, testes, homologação] x [Dev, QA, PO, etc]), conforme % de esforço por histórico IFPUG
 - Definir "% Alocação" por tipo de profissional por fase/sprint (Fonte Externa 2)
 - Cacular "Prazo por profissional por fase/sprint" ([% Alocação] * [Esforço por fase/profissional])
 - Estabelecer nível de paralelismo entre alocações de profissionais por fase/sprint
 - Calcular os prazos por fase
+
+## 📐 Validar PoC e estabelecer Prototipagem (incluindo padronização de coleta de requisitos)
 
 
 
