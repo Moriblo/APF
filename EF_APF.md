@@ -152,13 +152,22 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 
 ---
 
-### ✳️ Próximos passos (opcional)
+### ✳️ Próximos passos
 
-- Alocar carga por tipo de profissional (Dev, QA, PO etc.)
-- Definr custo de HH por tipo de profissional
-- Calcular custo total para o Esforço Total estimado ([Custo HH Dev * Esforço H Dev] + [Custo HH QA * Esforço H QA] + [Custo HH PO * Esforço H PO] + etc)
-- Mapear esforço por fase (desenvolvimento, testes, homologação)
-- Quebrar esforço por semana ou sprint
+#### Levantamento de Custos
+
+- Definir "Carga H" por tipo de profissional (Dev, QA, PO etc.)
+- Definr "Custo HH" por tipo de profissional (Fonte Externa 1)
+- Calcular custo total para o Esforço Total ([Custo HH Dev * Carga H Dev] + [Custo HH QA * Carga H QA] + [Custo HH PO * Carga H PO] + etc)
+
+#### Levantamento de Prazos
+
+- Mapear "Esforço por fase/profissional" ([desenvolvimento, testes, homologação] x [Dev, QA, PO, etc]), conforme % de esforço por histórico IFPUG
+- Definir "% Alocação" por tipo de profissional por fase/sprint (Fonte Externa 2)
+- Cacular "Prazo por profissional por fase/sprint" ([% Alocação] * [Esforço por fase/profissional])
+- Estabelecer nível de paralelismo entre alocações de profissionais por fase/sprint
+- Calcular os prazos por fase
+
 
 
 
