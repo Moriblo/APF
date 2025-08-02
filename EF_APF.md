@@ -170,6 +170,12 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 
 ## 📐 Validar PoC e estabelecer Prototipagem (Incluindo padronização de coleta de requisitos)
 
+- Construir visão por Curvas S (Tanto de Custos quanto de prazos e conferir com o andamento dos projetos)
+- Construir visão por indíces de EVA (CPI, SPI e conferir com o andamento dos projetos)
+
+## 🧠 Go no go para geração de base de conhecimento
+
+
 
 
 
