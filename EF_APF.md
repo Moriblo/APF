@@ -168,7 +168,8 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 - Estabelecer nível de paralelismo entre alocações de profissionais por fase/sprint
 - Calcular os prazos por fase
 
-## 📐 Validar PoC e estabelecer Prototipagem (incluindo padronização de coleta de requisitos)
+## 📐 Validar PoC e estabelecer Prototipagem (Incluindo padronização de coleta de requisitos)
+
 
 
 
