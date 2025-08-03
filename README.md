@@ -3,5 +3,5 @@
 
 ![Fluxo](https://github.com/Moriblo/APF/blob/main/Estimatron.jpg)
 
-- IFPGU: International Function Points Users Group
+- IFPUG: International Function Points Users Group
 - ISBSG: International Software Benchmarking Standards Group
