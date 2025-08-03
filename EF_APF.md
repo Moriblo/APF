@@ -1,4 +1,5 @@
 [![IFPUG Member](https://img.shields.io/badge/IFPUG-Member-blue)](https://www.ifpug.org)
+[![ISBSG Member](https://img.shields.io/badge/ISBSG-Member-brightgreen)](https://www.isbsg.org)
 # 📌 Covertendo o texto de uma EF em APF
 
 ## 📊 Coleta Padronizada de Requisitos (EF do PJ#1427 Descaracterizada)
@@ -177,6 +178,7 @@ O sistema deverá exibir boletos “Tipo C” no resultado da consulta do Painel
 - Validar Visão Final de Custos (Modelo versus Realidade)
 
 ## 🧠 Go no go para implementação de processo e geração de base de conhecimento
+
 
 
 
