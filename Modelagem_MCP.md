@@ -65,7 +65,7 @@ Baseado em boas práticas de engenharia de software, com referência em modelos 
 
 Este artefato serve como entrada para agentes generativos especializados em Function Points. Ele descreve o escopo técnico e financeiro de uma solução ERP, incluindo premissas de estimativa, stack tecnológica e custos por skill.
 
-A IA deverá responder com um JSON MCO contendo volume de PF, esforço estimado, custo por fase e skill, e cronograma projetado.
+A IA deverá responder com um JSON RET (Relatório de Estimativa Técnica) contendo volume de PF, esforço estimado, custo por fase e skill.
 
 ```
 {
@@ -229,12 +229,17 @@ Valor por hora de cada skill envolvido.
 ```
 ---
 ```
-Aja como um estimador técnico especializado em Function Points, seguindo rigorosamente o padrão IFPUG. Com base nas premissas informadas neste MCP, gere um artefato MCO contendo:
-- Volume estimado de PFs, separado por tipo de função (EE, SE, CE, ALI, AIE).
-- Para cada função identificada: descrição objetiva, tipo da função, quantidade de PFs e justificativa técnica vinculada diretamente aos requisitos funcionais e comportamentos de tela.
-- Esforço em horas e custo por fase e por skill, aplicando o risco conforme percentual informado.
-- Exibir todos os dados em formato tabular.
-- Não assumir dados derivados como pré-definidos — tudo deve ser calculado com base exclusivamente no MCP.
-- Não executar atividades fora do escopo definido.
-O objetivo é obter um MCO técnico, rastreável e auditável, com aderência total às práticas de análise por pontos de função.
+Exemplo de 'instrucoes_ia':
+Aja como um estimador técnico especializado em Function Points e siga rigorosamente o padrão IFPUG. Com base nas premissas informadas neste MCP, gere um artefato MCO contendo: 
+1 - O volume estimado de PF (Function Points), separado por tipo de função: Funções de Transação (EE, SE, CE) e Funções de Dados (ALI, AIE); 
+2 - Para cada função identificada, apresentar: 
+   - Uma descrição clara e objetiva da função; 
+   - O tipo de função (EE, SE, CE, ALI, AIE); 
+   - A quantidade de PF estimada; 
+   - A justificativa técnica que embasa a contagem, com mapeamento direto aos Requisitos Funcionais (RFs) e Comportamentos de Tela (CTs); 
+3 - O esforço em horas e custo por fase e por skill, respeitando a distribuição percentual informada neste MCP; aplicar o percentual de risco definido; 
+4 - Apresentar os dados em formato tabular, com clareza e rastreabilidade; 
+5 - Não assumir dados derivados como pré-definidos. Toda contagem e cálculo deve ser baseada exclusivamente neste MCP; 
+6 - Não executar tarefas além do escopo definido acima. 
+O objetivo é obter um RET (Relatório de Estimativa Técnica) técnico, rastreável e auditável, com total alinhamento às práticas de análise de pontos de função.
 ```
