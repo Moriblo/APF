@@ -137,6 +137,97 @@ A IA deverá responder com um JSON MCO contendo volume de PF, esforço estimado,
   }
 }
 ```
+---
+```
+# Documento de Descrição dos Campos do MCP (Medida de Complexidade de Projeto)
+
+## Estrutura Principal
+
+### `mcp`
+Objeto principal que contém toda a configuração do projeto necessário para gerar o MCO (Medida de Complexidade e Orçamento).
+
+---
+
+## 🔹 Metadados da Solicitação
+
+### `caller`
+Identificador do sistema ou orquestrador responsável por disparar a solicitação.  
+**Exemplo:** `"pf_orchestrator_v1"`
+
+### `goal`
+Objetivo da estimativa.  
+**Exemplo:** `"estimativa_pf_custo_completo"`
+
+### `session`
+Identificador único da sessão ou sprint.  
+**Exemplo:** `"PJ1427-Sprint05"`
+
+### `step`
+Etapa da contagem ou do processo estimativo.  
+**Exemplo:** `"calculo_estimativa_final"`
+
+### `domain`
+Domínio funcional do sistema ou módulo que será estimado.  
+**Exemplo:** `"ERP.Financeiro.BoletosFIDC"`
+
+---
+
+## 📋 Instruções de Execução para IA
+
+### `instrucoes_ia`
+Texto orientador que direciona a IA sobre como realizar a estimativa. Deve conter requisitos claros para a geração do MCO, como:
+- Separação por tipo de função (EE, SE, CE, ALI, AIE)
+- Justificativas técnicas
+- Cálculos de esforço e custo
+- Apresentação em tabelas
+- Restrições de escopo
+
+---
+
+## ⚙️ Contexto Técnico
+
+### `padrao_estimativa`
+Metodologia utilizada para a contagem.  
+**Valor recomendado:** `"IFPUG"`
+
+### `produtividade_horasporPF`
+Produtividade em horas estimadas para cada PF.  
+**Exemplo:** `2`
+
+### `risco_percentual`
+Percentual adicional a ser aplicado ao esforço para considerar risco.  
+**Exemplo:** `20`
+
+---
+
+### `stack`
+Tecnologias envolvidas no projeto.
+
+- `backend`: Tecnologias do lado servidor  
+  **Exemplo:** `".NET + C#"`
+- `frontend`: Tecnologias de interface  
+  **Exemplo:** `"React"`
+- `caracteristicas`: Funcionalidades ou elementos específicos  
+  **Exemplo:** `["API", "SAP"]`
+
+---
+
+### `skills_env`
+Lista de papéis e perfis que participam do projeto.  
+**Exemplo:** `["PO", "DevFront", "DevBack", "Tester", "DataEng", "SAPDev", "SAPFunc"]`
+
+---
+
+### `custos_por_hora`
+Valor por hora de cada skill envolvido.  
+**Exemplo:**
+
+```json
+"PO": 100.0,
+"DevFront": 110.0,
+...
+```
+---
 ```
 Aja como um estimador técnico especializado em Function Points, seguindo rigorosamente o padrão IFPUG. Com base nas premissas informadas neste MCP, gere um artefato MCO contendo:
 - Volume estimado de PFs, separado por tipo de função (EE, SE, CE, ALI, AIE).
