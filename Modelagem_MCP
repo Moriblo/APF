@@ -1,0 +1,60 @@
+# 📐 Modelo de distribuição de esforço por Skill e Fase
+
+Baseado em boas práticas de engenharia de software, com referência em modelos como:
+
+- **PMBOK (Project Management Body of Knowledge)**
+- **SCRUM** aplicado em ambientes híbridos
+- **Experiência empírica** na alocação de perfis técnicos em sistemas ERP (como SAP), backend, frontend e automação de comunicação
+
+---
+
+### 🧱 Fase 1: Desenvolvimento
+
+**Objetivo:** Construção técnica das funcionalidades, integração com SAP/API, layout de boletos, e fluxo de envio automático.
+
+| Skill                    | Justificativa                                        | % do esforço da fase |
+|--------------------------|------------------------------------------------------|-----------------------|
+| PO                       | Refinamento dos requisitos, interface com negócio    | 20%                   |
+| Dev                      | Backend .NET + lógica de negócios                    | 30%                   |
+| SAPDev                   | Ajustes na interface SAP                             | 30%                   |
+| Frontend (React via Dev) | Layouts e painéis internos                           | 20%                   |
+
+📊 **Esforço total da fase:** 40% do projeto
+
+---
+
+### 🧪 Fase 2: Testes
+
+**Objetivo:** Validação funcional, envio de boletos, testes automáticos e manuais de integração SAP/API.
+
+| Skill   | Justificativa                                      | % do esforço da fase |
+|---------|----------------------------------------------------|-----------------------|
+| Tester  | Testes manuais, automação, regressão               | 70%                   |
+| PO      | Apoio nas validações                               | 10%                   |
+| Dev     | Correções e suporte técnico durante testes         | 10%                   |
+| SAPDev  | Validação da interface SAP                         | 10%                   |
+
+📊 **Esforço total da fase:** 35% do projeto
+
+---
+
+### ✅ Fase 3: Homologação
+
+**Objetivo:** Validação final com cliente, dados reais, mensagens de boletos e regras SAP/negócio.
+
+| Skill    | Justificativa                                      | % do esforço da fase |
+|----------|----------------------------------------------------|-----------------------|
+| DataEng  | Verificação dos dados de boletos                   | 40%                   |
+| SAPFunc  | Validação do comportamento funcional no SAP        | 40%                   |
+| PO       | Apresentação para área de negócio                  | 10%                   |
+| Tester   | Cenários finais e suporte de validação             | 10%                   |
+
+📊 **Esforço total da fase:** 25% do projeto
+
+---
+
+### 🧮 Resumo de Boas Práticas Adotadas
+
+- **Distribuição por complexidade funcional:** mais esforço onde há lógica de negócio integrada com SAP e API
+- **Separação de perfis técnicos e funcionais:** desenvolvimento técnico (Dev, SAPDev), validação de dados (DataEng), e validação funcional (SAPFunc)
+- **Presença do PO em todas as fases**, com maior peso no início e menor na homologação
