@@ -72,66 +72,78 @@ A IA deverá responder com um JSON MCO contendo volume de PF, esforço estimado,
   "mcp": {
     "caller": "pf_orchestrator_v1",
     "goal": "estimativa_pf_custo_completo",
-    "session": "MOACYR-PJ1427-Sprint05",
+    "session": "[INSERIR IDENTIFICADOR DO PROJETO OU SPRINT]",
     "step": "calculo_estimativa_final",
-    "domain": "ERP.Financeiro.BoletosFIDC",
-    "instrucoes_ia": "Aja como um estimador técnico especializado em Function Points. Com base nas premissas informadas, gere um artefato MCO contendo: volume estimado de PF, esforço em horas, custo por fase e por skill, e cronograma sugerido. Todos os cálculos devem considerar a aplicação de risco e respeitar a distribuição percentual informada por fase e skill. Não assuma dados derivados como pré-definidos — tudo deve ser calculado com base neste MCP.",
+    "domain": "[INSERIR DOMÍNIO FUNCIONAL DO SISTEMA]",
+    "instrucoes_ia": "[UTILIZAR INSTRUÇÕES PADRONIZADAS PARA MCO – ver versão abaixo]",
     "context": {
       "padrao_estimativa": "IFPUG",
-      "produtividade_pf": 2,
-      "risco_percentual": 20,
+      "produtividade_horasporPF": [HORAS POR PF],
+      "risco_percentual": [PERCENTUAL DE RISCO],
       "stack": {
-        "backend": ".NET + C#",
-        "frontend": "React",
-        "caracteristicas": ["API", "SAP"]
+        "backend": "[TECNOLOGIA BACKEND]",
+        "frontend": "[TECNOLOGIA FRONTEND]",
+        "caracteristicas": ["API", "Integração", "[OUTROS]"]
       },
-      "skills_env": ["PO", "Dev", "Tester", "DataEng", "SAPDev", "SAPFunc"],
+      "skills_env": ["PO", "DevFront", "DevBack", "Tester", "DataEng", "SAPDev", "SAPFunc"],
       "custos_por_hora": {
-        "PO": 100.0,
-        "Dev": 110.0,
-        "Tester": 120.0,
-        "DataEng": 130.0,
-        "SAPDev": 140.0,
-        "SAPFunc": 150.0
+        "PO": [VALOR],
+        "DevFront": [VALOR],
+        "DevBack": [VALOR],
+        "Tester": [VALOR],
+        "DataEng": [VALOR],
+        "SAPDev": [VALOR],
+        "SAPFunc": [VALOR]
       },
       "fases": [
         {
           "nome": "Desenvolvimento",
-          "proporcao_pf": 0.4,
+          "proporcao_pf": [EX: 0.4],
           "distribuicao_skills": {
-            "PO": 0.2,
-            "Dev": 0.3,
-            "SAPDev": 0.3,
-            "Frontend": 0.2
+            "PO": [EX: 0.2],
+            "DevBack": [EX: 0.3],
+            "SAPDev": [EX: 0.3],
+            "DevFront": [EX: 0.2]
           }
         },
         {
           "nome": "Testes",
-          "proporcao_pf": 0.35,
+          "proporcao_pf": [EX: 0.35],
           "distribuicao_skills": {
-            "Tester": 0.7,
-            "PO": 0.1,
-            "Dev": 0.1,
-            "SAPDev": 0.1
+            "Tester": [EX: 0.7],
+            "PO": [EX: 0.1],
+            "DevBack": [EX: 0.1],
+            "SAPDev": [EX: 0.1]
           }
         },
         {
           "nome": "Homologacao",
-          "proporcao_pf": 0.25,
+          "proporcao_pf": [EX: 0.25],
           "distribuicao_skills": {
-            "DataEng": 0.4,
-            "SAPFunc": 0.4,
-            "PO": 0.1,
-            "Tester": 0.1
+            "DataEng": [EX: 0.4],
+            "SAPFunc": [EX: 0.4],
+            "PO": [EX: 0.1],
+            "Tester": [EX: 0.1]
           }
         }
       ]
     },
     "payload": {
-      "requisitos_funcionais": ["RF-01", "RF-02", "RF-03", "RF-04", "RF-05", "RF-06"],
-      "comportamentos_tela": ["CT-4.1", "CT-4.2", "CT-5.1", "CT-5.2", "CT-5.3"]
+      "requisitos": [
+        "[LISTAR OS REQUISITOS FUNCIONAIS E COMPORTAMENTOS DE TELA]",
+        "[EX: RF-01. Permitir alteração da forma de pagamento para 'C']"
+      ]
     }
   }
 }
 ```
-
+```
+Aja como um estimador técnico especializado em Function Points, seguindo rigorosamente o padrão IFPUG. Com base nas premissas informadas neste MCP, gere um artefato MCO contendo:
+- Volume estimado de PFs, separado por tipo de função (EE, SE, CE, ALI, AIE).
+- Para cada função identificada: descrição objetiva, tipo da função, quantidade de PFs e justificativa técnica vinculada diretamente aos requisitos funcionais e comportamentos de tela.
+- Esforço em horas e custo por fase e por skill, aplicando o risco conforme percentual informado.
+- Exibir todos os dados em formato tabular.
+- Não assumir dados derivados como pré-definidos — tudo deve ser calculado com base exclusivamente no MCP.
+- Não executar atividades fora do escopo definido.
+O objetivo é obter um MCO técnico, rastreável e auditável, com aderência total às práticas de análise por pontos de função.
+```
