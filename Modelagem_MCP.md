@@ -59,11 +59,11 @@ Baseado em boas práticas de engenharia de software, com referência em modelos 
 - **Separação de perfis técnicos e funcionais:** desenvolvimento técnico (Dev, SAPDev), validação de dados (DataEng), e validação funcional (SAPFunc)
 - **Presença do PO em todas as fases**, com maior peso no início e menor na homologação
 
-# Modelagem MCP
+# Modelagem de Contexto
 
 ## 📦 JSON MCP — Estimativa Técnica e Financeira
 
-Este artefato serve como entrada para agentes generativos especializados em Function Points. Ele descreve o escopo técnico e financeiro de uma solução ERP, incluindo premissas de estimativa, stack tecnológica e custos por skill.
+Este artefato serve como entrada para agentes generativos especializados em Function Points. Ele disponibiliza um formato de entrada de prompt e dados.
 
 A IA deverá responder com um JSON RET (Relatório de Estimativa Técnica) contendo volume de PF, esforço estimado, custo por fase e skill.
 
@@ -139,12 +139,12 @@ A IA deverá responder com um JSON RET (Relatório de Estimativa Técnica) conte
 ```
 ---
 ```
-# Documento de Descrição dos Campos do MCP (Medida de Complexidade de Projeto)
+# Documento de Descrição dos Campos do JSON
 
 ## Estrutura Principal
 
 ### `mcp`
-Objeto principal que contém toda a configuração do projeto necessário para gerar o MCO (Medida de Complexidade e Orçamento).
+Objeto principal que contém toda a configuração do projeto necessário para gerar o RET (Relatório de Estimativa Técnica).
 
 ---
 
