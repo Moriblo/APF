@@ -217,3 +217,39 @@ Questões a considerar:
 - Qual linguagem foi usada?  
 - Quantas linhas de código aproximadamente?  
 - O sistema é mais voltado para interface, processamento ou banco de dados?  
+
+## PERFORMANCE
+
+Medir a performance de um time de desenvolvimento em horas por ponto de função é uma abordagem bastante eficaz para avaliar produtividade, especialmente em ambientes que usam métricas funcionais como Análise de Pontos de Função (APF).
+
+🧮 O que é "horas por ponto de função"?  
+É uma métrica que indica quantas horas de trabalho são necessárias para entregar um ponto de função. Quanto menor esse número, maior a produtividade do time.
+
+🛠️ Passo a passo para medir  
+
+1. Estime ou conte os pontos de função  
+- Use a técnica de Análise de Pontos de Função (APF) para medir o tamanho funcional do software.  
+- Você pode usar métodos como IFPUG ou NESMA.  
+- Ferramentas como Function Point Workbench ou softwares de APF podem ajudar.  
+
+2. Registre as horas trabalhadas  
+- Use ferramentas de timesheet ou controle de horas (Jira, Toggl, Harvest, etc.).  
+- Considere apenas as horas diretamente relacionadas ao desenvolvimento (codificação, testes, revisão).  
+
+3. Calcule a métrica  
+Horas por ponto de função = Total de horas gastas / Total de pontos de função entregues  
+
+4. Compare com benchmarks  
+- **Segundo o IFPUG, a média de produtividade varia entre 10 a 30 horas por ponto de função, dependendo da complexidade, tecnologia e maturidade do time**.
+
+📊 Exemplo prático  
+| Projeto   | Pontos de Função | Horas Gastas | Horas/PF |
+|-----------|------------------|--------------|----------|
+| Sistema A | 120 PF           | 1800 h       | 15 h/PF  |
+| Sistema B | 80 PF            | 2000 h       | 25 h/PF  |
+
+🔍 Dicas para tornar a métrica útil  
+- Segmente por tipo de projeto: Web, mobile, legado, etc.  
+- Considere a curva de aprendizado: Times novos tendem a ter produtividade menor.  
+- Use em conjunto com outras métricas: Qualidade, retrabalho, satisfação do cliente.
+
