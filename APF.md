@@ -177,3 +177,43 @@ Arquivo de Interface Externa — CIDADES   ⇨ AIE
 | ALI  | 7 PFs | 10 PFs| 15 PFs|
 | AIE  | 5 PFs | 7 PFs | 10 PFs|
 
+## Relação entre linhas de código (LOC) e pontos de função (PF)
+
+A relação entre linhas de código (LOC) e pontos de função (PF) é complexa, mas existe uma forma de estimar essa conversão com base em fatores de produtividade históricos por linguagem de programação:
+
+🔄 Relação entre Pontos de Função e Linhas de Código  
+Os pontos de função medem o tamanho funcional do software (o que ele faz para o usuário), enquanto as linhas de código medem o tamanho técnico (como ele é implementado). Como são dimensões diferentes, a conversão exige fatores de equivalência por linguagem.
+
+📐 Fórmula estimada:  
+Pontos de Função ≈ Linhas de Código / Fator de Conversão da Linguagem
+
+📊 Tabela de Fatores de Conversão (estimativas médias)  
+| Linguagem         | Linhas por Ponto de Função (LOC/PF) | Pontos de Função por 1000 LOC |
+|-------------------|--------------------------------------|-------------------------------|
+| Assembly          | 320                                  | ~3                            |
+| C                 | 128                                  | ~8                            |
+| Java              | 53                                   | ~19                           |
+| C# / .NET         | 50                                   | ~20                           |
+| Python            | 42                                   | ~24                           |
+| Ruby              | 42                                   | ~24                           |
+| JavaScript        | 47                                   | ~21                           |
+| SQL (procedural)  | 13                                   | ~77                           |
+
+Fonte: estimativas baseadas em dados do ISBSG e IFPUG.
+
+🧮 Exemplo prático  
+Suponha que seu sistema tenha 25.000 linhas de código em Java:  
+Pontos de Função ≈ 25.000 / 53 ≈ 472 PF
+
+Se fosse em Python:  
+Pontos de Função ≈ 25.000 / 42 ≈ 595 PF
+
+⚠️ Importante considerar  
+- Esses valores são estimativas médias. Projetos com muita lógica de negócio ou interface complexa podem ter mais PF por LOC.  
+- O uso de frameworks, bibliotecas e geração automática de código pode distorcer a relação.  
+- Para maior precisão, o ideal é fazer uma contagem funcional real usando APF.
+
+Questões a considerar:  
+- Qual linguagem foi usada?  
+- Quantas linhas de código aproximadamente?  
+- O sistema é mais voltado para interface, processamento ou banco de dados?  
